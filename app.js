@@ -2,7 +2,7 @@
 * @Author: chenfl
 * @Date:   2017-12-07 15:16:10
 * @Last Modified by:   chenfl
-* @Last Modified time: 2017-12-07 16:54:36
+* @Last Modified time: 2017-12-07 17:49:20
 */
 var http = require('http');
 var fs = require('fs');
@@ -106,7 +106,7 @@ function filterData(html){
 					var arr=[];
 					
 					tags.each(function(item){
-						var tag=$(this).text();
+						var tag=$(this).text().trim();
 						arr.push(tag);
 					})
 
